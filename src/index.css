@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "NaughtyMonster";
+  src: local("NaughtyMonster"),
+   url("./fonts/naughty-monster/NaughtyMonster.ttf") format("truetype");
+  font-weight: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Fredoka";
+  src: local("Fredoka"),
+   url("./fonts/fredoka/Fredoka.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: local("Gilroy-Light"),
+    url("./fonts/gilroy-font/Gilroy-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: local("Gilroy-RegularItalic"),
+    url("./fonts/gilroy-font/Gilroy-RegularItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cirka-Medium";
+  src: local("Cirka-Variable"),
+    url("./fonts/cirka/Cirka-Variable.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cirka-Bold";
+  src: local("Cirka-Variable"),
+    url("./fonts/cirka/Cirka-Variable.ttf") format("truetype");
+}
+
+body {
+  overflow: overlay;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 32px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.7);
 }
