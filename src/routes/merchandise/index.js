@@ -20,7 +20,7 @@ const Merchandise = () => {
     var query = searchQuery;
 
     const response = await fetch(
-      "https://vitvibrance.com/api/v1.0/merchandise?" +
+      "https://vitvibrance.onrender.com/api/v1.0/merchandise?" +
       new URLSearchParams([
         ['page', page],
         ...query !== '' ? [['query', query]] : [],

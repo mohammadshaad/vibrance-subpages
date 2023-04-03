@@ -18,7 +18,7 @@ const Team = () => {
 
   const fetchData = async () => {
     const response = await fetch(
-      "https://vitvibrance.com/api/v1.0/team?" +
+      "https://vitvibrance.onrender.com/api/v1.0/team?" +
       new URLSearchParams({
         page: page,
       })

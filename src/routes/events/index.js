@@ -42,7 +42,7 @@ const Events = () => {
     const venues = Array.from(selectedVenues.keys());
 
     const response = await fetch(
-      "https://vitvibrance.com/api/v1.0/events?" +
+      "https://vitvibrance.onrender.com/api/v1.0/events?" +
       new URLSearchParams([
         ['page', page],
         // ['after', new Date().toISOString().substring(0, 11) + '00:00'],
@@ -91,7 +91,7 @@ const Events = () => {
     }
 
     try {
-      const data = await fetch(`https://vitvibrance.com/api/v1.0/${base}?${new URLSearchParams({query: query})}`);
+      const data = await fetch(`https://vitvibrance.onrender.com/api/v1.0/${base}?${new URLSearchParams({query: query})}`);
       const response = await data.json();
 
       const options = [];

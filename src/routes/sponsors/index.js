@@ -36,7 +36,7 @@ const Sponsors = () => {
 
   const fetchData = async () => {
     const response = await fetch(
-      "https://vitvibrance.com/api/v1.0/sponsors?" +
+      "https://vitvibrance.onrender.com/api/v1.0/sponsors?" +
       new URLSearchParams({
         page: page,
       })

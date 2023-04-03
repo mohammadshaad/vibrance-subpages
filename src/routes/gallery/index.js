@@ -17,7 +17,7 @@ const Gallery = () => {
 
   const fetchData = async () => {
     const response = await fetch(
-      "https://vitvibrance.com/api/v1.0/gallery?" +
+      "https://vitvibrance.onrender.com/api/v1.0/gallery?" +
       new URLSearchParams({
         page: page,
       })
